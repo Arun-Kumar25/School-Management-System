@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/apply.css">
+</head>
+<body>
+    <header>
+        <!-- <h1>EVENTS</h1> -->
+        <div class="logo">
+            <img src="img/logo.png" alt="School Management System Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="faculty.html">Our Faculty</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Courses</a>
+                    <div class="dropdown-content">
+                        <a href="class1-5.html">Courses 1 to 5 </a>
+                        <a href="class6-10.html">Courses 6 to 10 </a>
+                        <a href="class11-12.html">Courses 11 to 12 </a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+                <li><a href="fee.html">Fee Structure</a></li>
+                <li><a href="apply.html">Apply Online</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container bg-info"> 
+        <div class="wrap" style="margin-top:20px">
+          <h2 style="text-transform: uppercase; text-align: center;margin-bottom: 20px;">Personal details</h2>
+          <form method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="course">Select Course*</label>
+                <select name="course">
+                  <option value="">----Select Course----</option>
+                  <option value="7to10">7 to 10</option>
+                  <option value="Board">BOARD</option>
+                  <option value="olympiad">KVPY/NTSE/OLYMPIAD</option>
+                  <option value="IIT">IIT(M+A)</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="name">Name of the Candidate*</label>
+                <input type="text" class="form-control" name="name"  required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" name="email"  required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="number">Mobile No.*</label>
+                <input type="text" class="form-control" name="number"  required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="fname">Fathers' Name</label>
+                <input type="text" class="form-control" name="fname" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="mname">Mothers' Name</label>
+                <input type="text" class="form-control" name="mname" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="anum">Aadhaar No.</label>
+                <input type="text" class="form-control" name="anum" maxlength="12" minlength="12"required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="pnum">Parent's Contact Number</label>
+                <input type="text" class="form-control" name="pnum"  required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" class="form-control" name="dob" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="gender">Select Gender*</label>
+                <select name="gender">
+                  <option value="">----Select Gender ----</option>
+                  <option value="male">MALE</option>
+                  <option value="female">FEMALE</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="category">Select Category*</label>
+                <select name="category">
+                  <option value="">----Select category ----</option>
+                  <option value="gen">GENERAL</option>
+                  <option value="obc">OBC</option>
+                  <option value="sc">SC</option>
+                  <option value="st">SC/ST</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="coun">Country</label>
+                <input type="text" class="form-control" name="coun" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state"  required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="pin">Zip/Pin Code</label>
+                <input type="text" class="form-control" name="pin" minlength="6" maxlength="6" required>
+              </div>
+            </div>
+            <div class="text-center"><button  class="btn btn-primary "type="submit">Submit</button></div>
+          </form>
+        </div>
+    </section>
+    
+
+    <footer>
+      <div class="about-us" style="float: left;;">
+          <h3>About Us</h3>
+          <p>Army Public School Jabalpur is CBSE Affiliated School situated in the erstwhile princely state of
+              Jabalpur, MP. Army Public School, Jabalpur traces its roots back to the year 1992.  </p>
+
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/ArmyPublicSchoolNo1GrcJabalpur/" target="_blank"><img src="img/fb.png" alt="Facebook" 
+            ></a>
+        <a href="https://www.instagram.com/explore/locations/417580358/army-public-school/" target="_blank" ><img src="img/insta.png"
+                alt="Instagram"></a>
+        <a href="https://twitter.com/armyjabalpur?lang=fa" target="_blank" ><img src="img/x.png" alt="Twitter"></a>
+    </div>
+      <p style="text-align: center;">&copy; Arun Kumar Singh</p>
+      
+  </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="School Management System Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="faculty.html">Our Faculty</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Courses</a>
+                    <div class="dropdown-content">
+                        <a href="class1-5.html">Courses 1 to 5 </a>
+                        <a href="class6-10.html">Courses 6 to 10 </a>
+                        <a href="class11-12.html">Courses 11 to 12 </a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="fee.html">Fee Structure</a></li>
+                <li><a href="apply.html">Apply Online</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carousel">
+        <button class="carousel-button prev" onclick="changeSlide(-1)">Previous</button>
+        <button class="carousel-button next" onclick="changeSlide(1)">Next</button>
+        <img class="slide" src="img/home/1.jpeg" alt="Image 1">
+        <img class="slide" src="img/home/2.jpeg" alt="Image 2" style="display: none;">
+        <img class="slide" src="img/home/3.jpg" alt="Image 3" style="display: none;">
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(slideIndex) {
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - 1;
+            } else if (slideIndex >= totalSlides) {
+                slideIndex = 0;
+            }
+
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex].style.display = 'block';
+            currentSlide = slideIndex;
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        // Auto Slide
+        setInterval(() => {
+            changeSlide(1);
+        }, 3000);
+
+        // Responsive images
+        window.addEventListener('resize', () => {
+            slides.forEach(slide => {
+                slide.style.width = `${document.querySelector('.carousel').clientWidth}px`;
+            });
+        });
+
+        // Initialize first slide width
+        window.onload = () => {
+            slides.forEach(slide => {
+                slide.style.width = `${document.querySelector('.carousel').clientWidth}px`;
+            });
+        };
+    </script>
+
+
+    <h1><u>ARMY PUBLIC SCHOOL(JABALPUR)</u></h1>
+    <div class="course-container">
+        <div class="course-image">
+            <img src="img/chairman2.jpeg" alt="Course Image" >
+        </div>
+        <div class="course-details">
+            <h3 style="text-align: center;">MESSAGE FROM CHAIRMAN</h3>
+            <p style="text-transform: uppercase;">Army Public School Fazilka is now a very well established institution
+                of education, imparting the best in knowledge and extra curricular activities. The past results both in
+                the fields of academics and sports are proof of this. However, notwithstanding the hithertofore won
+                laurels, we need to focus on raising the level of our commitment, thereby reacing as near as possible to
+                perfection.
+
+                I am sanguine that the teachers, students and staff of Army Public School Fazilka will strive and
+                achieve enviable standards for others to emulate. My best wishes for all your ventures.</p>
+
+            <p style="text-align: center;">Brig. Mukesh Kumar Jain</p>
+        </div>
+    </div>
+    <h2>ABOUT SCHOOL</h2>
+    <p style="text-transform: uppercase;">Army Public School Kapurthala is situated in the erstwhile princely state of
+        Kapurthala, Punjab. Army Public School, Kapurthala traces its roots back to the year 1992. Inaugurated by Brig
+        Vinod Suri Cdr 23 (1) Armd Bde the then chairman of school. Over the years, the school has grown into a
+        full-fledged Senior Secondary School, comprising of Commerce and Humanities streams. The school being
+        coeducational provides a holistic approach to children.</p>
+    <h2 style="text-align: center;">POPULAR COURSES</h2>
+    <div class="course-container">
+        <div class="course-image">
+            <img src="img/home/4.jpg" alt="Course Image">
+        </div>
+        <div class="course-details">
+            <h3 style="text-align: center;">6 to 10</h3>
+            <p>WE PREPARE THE STUDENT FOR THE NTSE/KVPY/OLYMPIAD WITH BOARD, THERE IS NOT ANY HIDDEN CHARGE WILL BE
+                INCLUDED FOR NTSE/KVPY/OLYMPIAD. THIS COURSE IS ABSOLUTELY FREE.</p>
+            <p style="text-transform: uppercase;"> Academic Excellence:
+                Our curriculum for classes 6-10 is meticulously crafted to align with national and international
+                educational standards, ensuring a well-rounded academic experience.
+
+                With a blend of traditional teaching methodologies and modern pedagogical approaches, we foster a love
+                for learning and encourage students to excel in diverse subjects including Mathematics, Science, Social
+                Sciences, Languages, and more.</p>
+            <p style="text-transform: uppercase;">Holistic Development:
+                Beyond academics, we emphasize holistic development by offering a wide array of co-curricular and
+                extracurricular activities. From sports and arts to debates and cultural events, students have ample
+                opportunities to explore their interests and talents.
+                Our dedicated faculty members act as mentors, guiding students not only in their academic pursuits but
+                also in character building, leadership development, and moral values.</p>
+        </div>
+
+    </div>
+    <div class="course-container">
+        <div class="course-image">
+            <img src="img/home/5.jpg" alt="Course Image">
+        </div>
+        <div class="course-details">
+            <h3 style="text-align: center;">11 to 12</h3>
+            <p>WE PREPARE THE STUDENT FOR THE NTSE/KVPY/OLYMPIAD WITH BOARD, THERE IS NOT ANY HIDDEN CHARGE WILL BE
+                INCLUDED FOR NTSE/KVPY/OLYMPIAD. THIS COURSE IS ABSOLUTELY FREE.</p>
+            <p style="text-transform: uppercase;">Rigorous Academic Curriculum:
+                Our comprehensive curriculum for classes 11-12 is designed to challenge students intellectually,
+                preparing them for higher education and beyond.
+                With a focus on depth of knowledge and critical thinking skills, we offer a wide range of subjects
+                across Science, Commerce, and Humanities streams, enabling students to pursue their passions and
+                interests with rigor and enthusiasm.</p>
+            <p style="text-transform: uppercase;">Advanced Learning Environment:
+                Classes are conducted in state-of-the-art facilities equipped with modern amenities, fostering a
+                conducive environment for advanced learning and research.
+                Our experienced faculty members, experts in their respective fields, provide guidance and mentorship,
+                nurturing students to achieve academic excellence and reach their full potential.</p>
+        </div>
+    </div>
+    <div class="course-container">
+        <div class="course-image">
+            <img src="img/home/6.jpg" alt="Course Image">
+        </div>
+        <div class="course-details">
+            <h3 style="text-align: center;">JEE MAINS+ADVANCE</h3>
+            <p style="text-transform: uppercase;">Our IIIT JEE course is meticulously crafted by experienced faculty
+                members and subject matter experts, ensuring comprehensive coverage of the syllabus prescribed by the
+                Joint Entrance Examination (JEE) for admission to Indian Institutes of Information Technology (IIITs).
+                The curriculum is structured to build a strong foundation in Physics, Chemistry, and Mathematics,
+                focusing on conceptual clarity, problem-solving techniques, and application-oriented learning.</p>
+        </div>
+    </div>
+    <div class="facilities-container">
+        <h2 style="margin: 10px 10px 10px 10px;">TOP RATED FACILITIES</h2>
+        <div class="facilities-content">
+            <div class="column">
+                <ul style="list-style: disc;">
+                    <li style="margin-left: 200px;">FULLY A.C CLASSROOM</li>
+                    <li style="margin-left: 200px;">BIOMETRIC ATTENDANCE SYSTEM</li>
+                    <li style="margin-left: 200px;">INDIVIDUAL CARE OF STUDENTS</li>
+                    <li style="margin-left: 200px;">TRANSPORT FACILITIES</li>
+                    <li style="margin-left: 200px;">REGULAR TEST AND EVALUATION</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul style="list-style: disc;">
+                    <li style="margin-left: 200px;">SEPARATE HOSTEL FOR BOYS AND GIRLS</li>
+                    <li style="margin-left: 200px;">SMALL BATCH GROUPS</li>
+                    <li style="margin-left: 200px;">MODERN LIBRARY ROOM</li>
+                    <li style="margin-left: 200px;">DOUBTS CLEARING CLASSES</li>
+                    <li style="margin-left: 200px;">UNDER CCTV CAMERA SURVEILLANCE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="about-us" style="float: left;;">
+            <h3>About Us</h3>
+            <p>Army Public School Jabalpur is CBSE Affiliated School situated in the erstwhile princely state of
+                Jabalpur, MP. Army Public School, Jabalpur traces its roots back to the year 1992.  </p>
+
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/ArmyPublicSchoolNo1GrcJabalpur/" target="_blank"><img src="img/fb.png" alt="Facebook" 
+                ></a>
+            <a href="https://www.instagram.com/explore/locations/417580358/army-public-school/" target="_blank" ><img src="img/insta.png"
+                    alt="Instagram"></a>
+            <a href="https://twitter.com/armyjabalpur?lang=fa" target="_blank" ><img src="img/x.png" alt="Twitter"></a>
+        </div>
+        <p style="text-align: center;">&copy; Arun Kumar Singh</p>
+        
+    </footer>
+</body>
+
+</html>
